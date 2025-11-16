@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>etch-sktech</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="title">Etch A Sketch</h1>
+    <h1 class="title-below">Neon version</h1>
+
+    <div class="side-menu">
+        <div class="main-menu-div"> <img src="img/planet-icon.svg" alt="menu-icon" height="70" width="70" class="menu-icon"> </div>
+        <ul class="menu-btns">
+        <li><button class="color-btn btn"> <img src="img/color.svg" alt="color button"> </button> <span class="btn-name">Color</span></li>
+
+        <li><button class="erase-btn btn"> <img src="img/erase.svg" alt="erase button"> </button> <span class="btn-name">Erase</span></li>
+
+        <li><button class="rainbow-btn btn"> <img src="img/rainbow.svg" alt="rainbow button"> </button> <span class="btn-name">Rainbow</span></li>
+
+        <li><button class="reset-btn btn"> <img src="img/reset.svg" alt="resey button"> </button> <span class="btn-name">Reset</span></li>
+        </ul>
+
+        <div class="slider-box">
+            <label for="grid-slider">grid size: <span id="grid-size">16</span>x<span id="grid-size-2">16</span></label>
+            <input type="range" id="grid-slider"  min="2" max="64" step="1" value="16">
+        </div>
+    </div>
+
+    <div class="sketch-box"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
